@@ -23,12 +23,12 @@ int main()
 
     // Data input for the first card
     printf("Digite o estado da primeira carta (A-H): ");
-    scanf(" %c", &state1);
+    scanf(" %2c", &state1);
     printf("Digite o código da primeira carta (Ex: A01): ");
-    scanf(" %s", code1);
-    getchar();
+    scanf(" %4s", code1);
+    getchar(); // Clear newline character from buffer
     printf("Digite o nome da cidade: ");
-    scanf(" %s", cityName1);
+    scanf(" %[^\n]", cityName1);
     printf("Digite a população: ");
     scanf(" %d", &population1);
     printf("Digite a área da cidade (em km²): ");
@@ -40,12 +40,12 @@ int main()
 
     // Data input for the second card
     printf("\nDigite o estado da segunda carta (A-H): ");
-    scanf(" %c", &state2);
+    scanf(" %2c", &state2);
     printf("Digite o código da segunda carta (Ex: B02): ");
-    scanf(" %s", code2);
-    getchar();
+    scanf(" %4s", code2);
+    getchar(); // Clear newline character from buffer
     printf("Digite o nome da cidade: ");
-    scanf(" %s", cityName2);
+    scanf(" %[^\n]", cityName2);
     printf("Digite a população: ");
     scanf(" %d", &population2);
     printf("Digite a área da cidade (em km²): ");
