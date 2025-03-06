@@ -76,8 +76,8 @@ int main()
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f bilhões de reais\n", gdp1);
     printf("Número de Pontos Turísticos: %d\n", touristPoints1);
-    printf("Population Density: %.2f people/km²\n", populationDensity1);
-    printf("GDP per Capita: %.2f reais\n", gdpPerCapita1);
+    printf("Densidade Populacional: %.2f hab/km²\n", populationDensity1);
+    printf("PIB per Capita: %.2f reais\n", gdpPerCapita1);
 
     // Display of information for the second card
     printf("\nCarta 2:\n");
@@ -88,8 +88,8 @@ int main()
     printf("Área: %.2f km²\n", area2);
     printf("PIB: %.2f bilhões de reais\n", gdp2);
     printf("Número de Pontos Turísticos: %d\n", touristPoints2);
-    printf("Population Density: %.2f people/km²\n", populationDensity2);
-    printf("GDP per Capita: %.2f reais\n", gdpPerCapita2);
+    printf("Densidade Populacional: %.2f hab/km²\n", populationDensity2);
+    printf("PIB per Capita: %.2f reais\n", gdpPerCapita2);
 
     return 0;
 }
