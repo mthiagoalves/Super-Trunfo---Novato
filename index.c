@@ -62,4 +62,16 @@ int main()
     printf("Área: %.2f km²\n", area1);
     printf("PIB: %.2f bilhões de reais\n", gdp1);
     printf("Número de Pontos Turísticos: %d\n", touristPoints1);
+
+    // Display of information for the second card
+    printf("\nCarta 2:\n");
+    printf("Estado: %c\n", state2);
+    printf("Código: %s\n", code2);
+    printf("Nome da Cidade: %s\n", cityName2);
+    printf("População: %d\n", population2);
+    printf("Área: %.2f km²\n", area2);
+    printf("PIB: %.2f bilhões de reais\n", gdp2);
+    printf("Número de Pontos Turísticos: %d\n", touristPoints2);
+
+    return 0;
 }
