@@ -26,6 +26,7 @@ int main()
     scanf(" %c", &state1);
     printf("Digite o código da primeira carta (Ex: A01): ");
     scanf(" %s", code1);
+    getchar();
     printf("Digite o nome da cidade: ");
     scanf(" %s", cityName1);
     printf("Digite a população: ");
@@ -42,6 +43,7 @@ int main()
     scanf(" %c", &state2);
     printf("Digite o código da segunda carta (Ex: B02): ");
     scanf(" %s", code2);
+    getchar();
     printf("Digite o nome da cidade: ");
     scanf(" %s", cityName2);
     printf("Digite a população: ");
