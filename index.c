@@ -42,6 +42,10 @@ int main()
     printf("Digite o número de pontos turísticos: ");
     scanf(" %d", &touristPoints1);
 
+     // Calculation of population density and GDP per capita for the first city
+     populationDensity1 = population1 / area1;
+     gdpPerCapita1 = (gdp1 * 1000000000) / population1;
+
     // Data input for the second card
     printf("\nDigite o estado da segunda carta (A-H): ");
     scanf(" %2c", &state2);
