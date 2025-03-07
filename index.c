@@ -26,7 +26,7 @@ int main()
     float populationDensity2;
     float gdpPerCapita2;
     float superPower2;
-    
+
     // Data input for the first card
     printf("Digite o estado da primeira carta (A-H): ");
     scanf(" %2c", &state1);
@@ -44,9 +44,10 @@ int main()
     printf("Digite o número de pontos turísticos: ");
     scanf(" %d", &touristPoints1);
 
-    // Calculation of population density and GDP per capita for the first city
+    // Calculation of population density, GDP per capita and super power for the first city
     populationDensity1 = population1 / area1;
-    gdpPerCapita1 = (gdp1 * 1000000000) / population1;
+    gdpPerCapita1 = (gdp1 * 1e9) / population1;
+    superPower1 = (float)population1 + area1 + (gdp1 * 1e9) + touristPoints1 + gdpPerCapita1 + (1.0f / populationDensity1);
 
     // Data input for the second card
     printf("\nDigite o estado da segunda carta (A-H): ");
@@ -65,9 +66,10 @@ int main()
     printf("Digite o número de pontos turísticos: ");
     scanf(" %d", &touristPoints2);
 
-    // Calculation of population density and GDP per capita for the second city
+    // Calculation of population density, GDP per capita and super power for the second city
     populationDensity2 = population2 / area2;
-    gdpPerCapita2 = (gdp2 * 1000000000) / population2;
+    gdpPerCapita2 = (gdp2 * 1e9) / population2;
+    superPower1 = (float)population1 + area1 + (gdp1 * 1e9) + touristPoints1 + gdpPerCapita1 + (1.0f / populationDensity1);
 
     // Display of information for the first card
     printf("\nCarta 1:\n");
