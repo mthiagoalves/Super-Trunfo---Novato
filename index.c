@@ -13,6 +13,7 @@ int main()
     int touristPoints1;
     float populationDensity1;
     float gdpPerCapita1;
+    float superPower1;
 
     // Declaration of variables for the second card
     char state2;
@@ -24,7 +25,8 @@ int main()
     int touristPoints2;
     float populationDensity2;
     float gdpPerCapita2;
-
+    float superPower2;
+    
     // Data input for the first card
     printf("Digite o estado da primeira carta (A-H): ");
     scanf(" %2c", &state1);
