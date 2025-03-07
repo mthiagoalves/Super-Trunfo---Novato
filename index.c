@@ -4,28 +4,16 @@ int main()
 {
 
     // Declaration of variables for the first card
-    char state1;
-    char code1[4];
-    char cityName1[50];
-    int population1;
-    float area1;
-    float gdp1;
+    char state1, code1[4], cityName1[50];
+    unsigned int population1;
+    float area1, gdp1, populationDensity1, gdpPerCapita1, superPower1;
     int touristPoints1;
-    float populationDensity1;
-    float gdpPerCapita1;
-    float superPower1;
 
     // Declaration of variables for the second card
-    char state2;
-    char code2[4];
-    char cityName2[50];
-    int population2;
-    float area2;
-    float gdp2;
+    char state2, code2[4], cityName2[50];
+    unsigned int population2;
+    float area2, gdp2, populationDensity2, gdpPerCapita2, superPower2;
     int touristPoints2;
-    float populationDensity2;
-    float gdpPerCapita2;
-    float superPower2;
 
     // Data input for the first card
     printf("Digite o estado da primeira carta (A-H): ");
