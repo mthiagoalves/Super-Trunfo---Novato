@@ -71,29 +71,15 @@ int main()
     gdpPerCapita2 = (gdp2 * 1e9) / population2;
     superPower1 = (float)population1 + area1 + (gdp1 * 1e9) + touristPoints1 + gdpPerCapita1 + (1.0f / populationDensity1);
 
-    // Display of information for the first card
-    printf("\nCarta 1:\n");
-    printf("Estado: %c\n", state1);
-    printf("Código: %s\n", code1);
-    printf("Nome da Cidade: %s\n", cityName1);
-    printf("População: %d\n", population1);
-    printf("Área: %.2f km²\n", area1);
-    printf("PIB: %.2f bilhões de reais\n", gdp1);
-    printf("Número de Pontos Turísticos: %d\n", touristPoints1);
-    printf("Densidade Populacional: %.2f hab/km²\n", populationDensity1);
-    printf("PIB per Capita: %.2f reais\n", gdpPerCapita1);
-
-    // Display of information for the second card
-    printf("\nCarta 2:\n");
-    printf("Estado: %c\n", state2);
-    printf("Código: %s\n", code2);
-    printf("Nome da Cidade: %s\n", cityName2);
-    printf("População: %d\n", population2);
-    printf("Área: %.2f km²\n", area2);
-    printf("PIB: %.2f bilhões de reais\n", gdp2);
-    printf("Número de Pontos Turísticos: %d\n", touristPoints2);
-    printf("Densidade Populacional: %.2f hab/km²\n", populationDensity2);
-    printf("PIB per Capita: %.2f reais\n", gdpPerCapita2);
+    // Display of information for the card winner
+    printf("\nComparação de Cartas:\n");
+    printf("População: Carta %d venceu (1)\n", population1 > population2 ? 1 : 2);
+    printf("Área: Carta %d venceu (1)\n", area1 > area2 ? 1 : 2);
+    printf("PIB: Carta %d venceu (1)\n", gdp1 > gdp2 ? 1 : 2);
+    printf("Pontos Turísticos: Carta %d venceu (1)\n", touristPoints1 > touristPoints2 ? 1 : 2);
+    printf("Densidade Populacional: Carta %d venceu (1)\n", populationDensity1 < populationDensity2 ? 1 : 2);
+    printf("PIB per Capita: Carta %d venceu (1)\n", gdpPerCapita1 > gdpPerCapita2 ? 1 : 2);
+    printf("Super Poder: Carta %d venceu (1)\n", superPower1 > superPower2 ? 1 : 2);
 
     return 0;
 }
